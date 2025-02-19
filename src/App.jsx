@@ -2,7 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import Categories from './components/Categories/Categories';
@@ -29,7 +29,7 @@ import AllOrders from './components/AllOrders/AllOrders';
 
 
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: "",
     element: <Layout />,
