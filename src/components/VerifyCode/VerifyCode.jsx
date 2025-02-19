@@ -78,7 +78,7 @@ export default function VerifyCode() {
           ))}
         </div>
 
-        <p className="mt-2 text-sm text-gray-500">Please enter the 6-digit code sent via email.</p>
+        <p className="mt-2 w-full text-center text-sm text-gray-500">Please enter the 6-digit code sent via email.</p>
 
         {/* ✅ Loading Button */}
         <button
