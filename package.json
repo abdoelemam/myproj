@@ -2,6 +2,7 @@
   "name": "ecommerce",
   "version": "0.0.0",
   "private": true,
+  "homepage": "http://abdoelemam.github.io/E-Co",
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "license": "ISC",
   "author": "route",
@@ -10,8 +11,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build" ,
+    "deploy": "gh-pages -d dist", 
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview" 
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -19,6 +22,7 @@
     "flowbite-react": "^0.10.2",
     "formik": "^2.4.6",
     "generate-react-cli": "^8.4.9",
+    "gh-pages": "^6.3.0",
     "jwt-decode": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

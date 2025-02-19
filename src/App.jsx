@@ -19,7 +19,7 @@ import CartContextProvider from './components/CartContext/CartContext';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // ✅ Import the styles
 import ShippingCart from './components/ShippingCart/ShippingCart';
-import { OrdersContext, OrdersContextProvider } from './components/ordersContext/ordersContext';
+import {  OrdersContextProvider } from './components/ordersContext/ordersContext';
 import { WishlistContextProvider } from './components/WishlistContext/WishlistContext';
 import Whishlist from './components/Whishlist/Whishlist';
 import ForgotPassword from './components/ForgotPassword/ForgotPassword';
