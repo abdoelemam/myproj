@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
 import { Modal } from "flowbite";
 import { UserContext } from "../UserContext/UserContext";
-import { OrdersContext } from "../ordersContext/ordersContext";
+import { OrdersContext } from "../OrdersContext/OrdersContext";
 
 export default function AllOrders() {
   const { userLogin } = useContext(UserContext);
