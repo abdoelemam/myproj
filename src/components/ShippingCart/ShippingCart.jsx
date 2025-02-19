@@ -15,8 +15,8 @@ export default function ShippingCart() {
 
   let yupValidation = Yup.object().shape({
     details:Yup.string().required('email is required') ,
-    phone:Yup.string().required('email is required') ,
-    city:Yup.string().required('email is required') ,
+    phone:Yup.string().required('phone is required') ,
+    city:Yup.string().required('city is required') ,
   })
 
   async function handleShippingCart(formvalues){
@@ -76,7 +76,7 @@ return (
                 <input type="text" name='details' onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.details} id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Details" required />
                 
                 {formik.errors.details && formik.touched.details?  <div class="p-4 mb-4 mt-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-                      <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+                      <span class="font-medium">{formik.errors.details}</span>
                     </div>:null}
             </div> 
 
@@ -85,7 +85,7 @@ return (
                 <input type="phone" name='phone' onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.phone} id="password" className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="phone" required />
                 
                 {formik.errors.phone && formik.touched.phone?  <div class="p-4 mb-4 mt-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-                      <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+                      <span class="font-medium">{formik.errors.phone}</span>
                     </div>:null}    
             
             </div> 
@@ -95,7 +95,7 @@ return (
                 <input type="phone" name='city' onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.city} id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="city" required />
                 
                 {formik.errors.city && formik.touched.city?  <div class="p-4 mb-4 mt-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-                      <span class="font-medium">Danger alert!</span> Change a few things up and try submitting again.
+                      <span class="font-medium">{formik.errors.city}</span> Change a few things up and try submitting again.
                     </div>:null}    
             
             </div> 
