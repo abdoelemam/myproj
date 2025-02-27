@@ -53,9 +53,9 @@ export default function AllOrders() {
 
   return (
     <>
-      <div className="container">
-        <div className="relative overflow-x-auto ">
-          <table className="w-full m-auto text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <div className="container min-h-[70vh]">
+        <div className="relative overflow-x-auto   ">
+          <table className="w-full  m-auto text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-900 uppercase dark:text-gray-400">
               <tr>
                 <th className="px-6 py-3">Product ID</th>
