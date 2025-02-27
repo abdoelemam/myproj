@@ -32,7 +32,7 @@ export default function ShippingCart() {
         let data = await payCash(formvalues)
         if(data.status == 'success'){
           await getCart()
-          navigate('/allorders')
+          navigate('/AllOrders')
         }
       }
     }

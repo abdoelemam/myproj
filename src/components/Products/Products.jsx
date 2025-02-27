@@ -19,7 +19,9 @@ export default function Products() {
 
   return (
     <>
-            <RecentProducts/>
+        <div className='py-10'>
+          <RecentProducts/>
+        </div>
 
     </>
   )

@@ -25,7 +25,7 @@ import Whishlist from './components/Whishlist/Whishlist';
 import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 import VerifyCode from './components/VerifyCode/VerifyCode';
 import ResetPassword from './components/ResetPassword/ResetPassword';
-import AllOrders from './components/AllOrders/AllOrders';
+import AllOrders from './components/AllOrders/allorders';
 
 
 

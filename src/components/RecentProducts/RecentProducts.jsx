@@ -69,9 +69,11 @@ export default function RecentProducts() {
             <div className='w-full card mx-4 sm:mx-0 border border-2 border-transparent hover:border-green-500 transition duration-300 px-5 py-5 sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6' id={product.id} key={product.id}>
               <Link to={`/productdetails/${product.id}/${product.category.name}`} >
                 <img src={product.imageCover} className='w-full ' alt="" />
+              </Link>
                 <div className='con px-2 mt-2'>
                   <div className='text-xl'> {product.category.name} </div>
                   <h3 className='text-lg text-gray-500'>{product.title.split(' ').slice(0,2).join(' ')}</h3>
+                  
                   <div className='flex  justify-between my-1'> 
                   <span className='flex px-1 justify-end'><button onClick={()=> handleWishlistClick(product.id)}> <i className={`fa-solid fa-heart  text-xl ${WishlistItems?.includes(product.id) ? "text-red-500" : "text-black"}`}></i> </button></span>
                     <span>
@@ -80,7 +82,7 @@ export default function RecentProducts() {
                     </span>
                   </div>
                 </div>
-              </Link>
+              
               
               <span className='text-xl px-2'>{product.price} EGP</span>
               {productLoading[product.id] ?    <div className="w-full text-center my-5 focus:outline-none text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 spinner-border text-white" role="status">

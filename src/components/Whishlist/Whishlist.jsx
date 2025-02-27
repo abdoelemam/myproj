@@ -22,11 +22,11 @@ export default function Whishlist() {
 
   return (
     <>
-<div className='container'>
+<div className='container min-h-[60vh] py-10'>
     {Loading ? <Loader/> : 
       <>
             {whishData?.data?.length > 0  ? <>
-      <h1>Favourite</h1>
+      <h1 className='text-3xl  my-8'>Favourite</h1>
 
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
 
